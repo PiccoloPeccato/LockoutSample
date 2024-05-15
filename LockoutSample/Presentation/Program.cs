@@ -3,6 +3,7 @@ using LockoutSample.Application.Services;
 using LockoutSample.Domain.Repositories;
 using LockoutSample.Infrastructure.Data;
 using LockoutSample.Infrastructure.Repositories;
+using LockoutSample.Presentation.Handlers;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -29,6 +30,8 @@ namespace LockoutSample.Presentation
                 app.UseSwaggerUI();
             }
 
+            app.UseExceptionHandler();
+
             app.MapControllers();
 
             app.Run();
@@ -49,6 +52,9 @@ namespace LockoutSample.Presentation
             });
 
             services.AddScoped<ILockoutService, LockoutService>();
+
+            services.AddProblemDetails();
+            services.AddExceptionHandler<ExceptionToProblemDetailsHandler>();
         }
 
         private static void ConfigureDatabase(IServiceCollection services,

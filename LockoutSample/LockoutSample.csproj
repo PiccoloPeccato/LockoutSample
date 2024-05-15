@@ -10,8 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Infrastructure\Migrations\" />
-    <Folder Include="Presentation\Controllers\" />
-    <Folder Include="Presentation\Handlers\" />
   </ItemGroup>
 
   <ItemGroup>

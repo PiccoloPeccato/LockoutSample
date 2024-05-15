@@ -3,6 +3,6 @@
     public class InvalidCodeException : ConflictException
     {
         public InvalidCodeException(int attempts)
-            : base($"The entered code is invalid. You have {attempts} remaining.") { }
+            : base($"The entered code is invalid. You have {attempts} attempts remaining.") { }
     }
 }
