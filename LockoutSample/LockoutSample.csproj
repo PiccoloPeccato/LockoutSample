@@ -10,9 +10,6 @@
     <Folder Include="Application\Interfaces\" />
     <Folder Include="Application\Requests\" />
     <Folder Include="Application\Services\" />
-    <Folder Include="Domain\Entities\" />
-    <Folder Include="Domain\Exceptions\" />
-    <Folder Include="Domain\Repositories\" />
     <Folder Include="Infrastructure\Data\" />
     <Folder Include="Infrastructure\Migrations\" />
     <Folder Include="Infrastructure\Repositories\" />
