@@ -9,9 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Interfaces\" />
-    <Folder Include="Application\Requests\" />
-    <Folder Include="Application\Services\" />
     <Folder Include="Infrastructure\Migrations\" />
     <Folder Include="Presentation\Controllers\" />
     <Folder Include="Presentation\Handlers\" />

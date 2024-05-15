@@ -1,3 +1,5 @@
+using LockoutSample.Application.Interfaces;
+using LockoutSample.Application.Services;
 using LockoutSample.Domain.Repositories;
 using LockoutSample.Infrastructure.Data;
 using LockoutSample.Infrastructure.Repositories;
@@ -45,6 +47,8 @@ namespace LockoutSample.Presentation
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
             });
+
+            services.AddScoped<ILockoutService, LockoutService>();
         }
 
         private static void ConfigureDatabase(IServiceCollection services,
