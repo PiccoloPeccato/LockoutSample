@@ -4,15 +4,15 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Application\Interfaces\" />
     <Folder Include="Application\Requests\" />
     <Folder Include="Application\Services\" />
-    <Folder Include="Infrastructure\Data\" />
     <Folder Include="Infrastructure\Migrations\" />
-    <Folder Include="Infrastructure\Repositories\" />
     <Folder Include="Presentation\Controllers\" />
     <Folder Include="Presentation\Handlers\" />
   </ItemGroup>
